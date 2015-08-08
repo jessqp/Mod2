@@ -1,0 +1,17 @@
+/**
+ * The Calculations class performs addition, subtraction,
+ * multiplication, division, and modulus operations on integers and
+ * decimals.
+ * 
+ * ©FLVS 2007
+ * @author Bill Jordan; A.Ross
+ * @version 01/19/07; 06/24/12
+ */
+public class CalculationsV1
+{
+    public static void main(String[ ] args)
+    {
+        System.out.print("15 divided by 2.5 times -2 plus 10 divided by 5 equals " + (15/2.5*-2+10/5) );
+               
+    } // end of main method
+} // end of class
