@@ -1,0 +1,116 @@
+/**
+ * MeasuermentConverter_v1 converts to and from Metric and English
+ * units of measure.
+ *
+ *      Sample Calculation:
+ *        1 mile = 5280 ft,
+ *        therefore    6230 ft / 5280 = 1.17992 miles
+ *          and    1.179 miles * 5280 = 6225.12 ft
+ *
+ * ©FLVS 2007
+ * @author B. Jordan
+ * @version 01/19/07
+ *
+ * Modified by: (Jesica Quinones)
+ * Date: (August 4th, 2015)
+ */
+public class MeasurementConverterV1
+{
+    public static void main(String[ ] args)
+    {
+        //local variable declarations - assign actual values below
+        double miles;                   // distance in miles
+        double feet;                    // distance in feet
+        double feetPerMile = 5280;      //number of feet per 1 mile
+        double milesPerFoot = 0.000189394; //number of miles per 1 foot
+        double kilometers;                // distance in kilometers
+        double milesPerKilometer = 0.621371;        //number of miles per 1 kilometer 
+        double kilometersPerMile = 1.60934;         //number of kilometers per 1 mile 
+        double kilograms;                   //weight in kilograms 
+        double pounds;                      //weight in pounds
+        double poundsPerKilogram = 2.20462 ;        //number of pounds per 1 kilogram
+        double kilogramsPerPound = 0.453592 ;        //number of kilograms per 1 pound
+        double gallons;                     //volume in Gallons
+        double liters;                      //volume in Liters
+        double gallonsPerLiter = 0.264172 ;          //number of gallos per 1 liter
+        double litersPerGallon = 3.78541 ;          //number of liters per 1 gallon
+        double centimeters;                         //distance in centimeters
+        double inches;                              //distance in inches
+        double inchesPerCentimeter = 0.393701;              //number of inches per centimeters
+        double centimetersPerInch = 2.54 ;               //numbers of centimeters per inch
+        
+        
+        //...finish declaring local variables here, including end of line
+        //...comments doccumenting purpose of each variable
+
+
+        //convert feet to miles
+        feet = 6230;
+        miles = feet / feetPerMile;
+        System.out.println(feet + " ft. = " + miles + " mi.");
+     
+
+
+        //convert miles to feet
+        miles = 28; 
+        feet = miles / milesPerFoot;
+        System.out.println( miles + " mi. = " + feet + " ft. "); 
+     
+        
+        
+        //miles to kilometers 
+        miles = 60; 
+        kilometers = miles / milesPerKilometer; 
+        System.out.println( miles + " mi. = " + kilometers + " km."); 
+        
+        
+   
+        
+        //kilometers to miles 
+        kilometers = 10; 
+        miles = kilometers / kilometersPerMile;
+        System.out.println( kilometers + " km. = " + miles + " mi. ");
+
+        
+        //pounds to kilograms 
+        pounds = 170; 
+        kilograms = pounds / poundsPerKilogram; 
+        System.out.println( pounds + " lbs. = " + kilograms + " kg. "); 
+
+        
+        
+        //kilograms to pounds 
+        kilograms = 100; 
+        pounds = kilograms / kilogramsPerPound; 
+        System.out.println( kilograms + " kg. = " + pounds + " lbs. "); 
+    
+        
+        
+        //gallons to liters 
+        gallons = 223; 
+        liters = gallons / gallonsPerLiter; 
+        System.out.println( gallons + " gal. = " + liters + " L. " ); 
+       
+        
+        
+        //liters to gallons 
+        liters = 45; 
+        gallons = liters / litersPerGallon;
+        System.out.println( liters + " L. = " + gallons + " gal. ");
+        System.out.println();
+
+        
+        //Additional convertions 
+        //Inches to centimeters 
+        inches = 72;
+        centimeters = inches / inchesPerCentimeter; 
+        System.out.println( inches + " inch. = " + centimeters + " cm. "); 
+        
+        //centimeters to inches 
+        centimeters = 30; 
+        inches = centimeters / centimetersPerInch; 
+        System.out.println( centimeters + " cm. = " + inches + " inch. " ); 
+
+    }//end of main method
+}//end of class
+
